@@ -1,0 +1,28 @@
+const please_set_nick_name = "Please type '>set nickname: yourname' to set your nick name!"
+const welcome_user = "Welcome to back!"
+const init_wss_complate = "Success to connect to ws server!"
+const error_to_fetch_user_info = "Can not get user info, please refresh page!"
+const nick_name_empty = "You missing nickname in your set nickname command!"
+const room_name_empty = "You missing target room name in your switch room command!"
+const already_set_nick_name = "Can not set your nick name again!"
+const show_logs = "'>showlogs:' will async chat logs from another users!"
+const switch_room = "'>switchroom: 3309' will exit current room and join to new room name with 3309!"
+const change_db = "'>chnagebg: 0-9/def' will change current background img!"
+const switch_complate = "Already awitch to room: 3309!"
+const exit_room = "'>exit' will exit current room and join to default room!"
+const clear_messages = "'>clear' will clear current room all chatting message!"
+const clear_complate = "Already clear all chatting message in current room !"
+const send_img = "'>sendimg:'will need you choose an image to send to others!"
+const load_img_error = "Load img from local failed!"
+const error_command = "Unable to identify your commands!"
+const normal_message = "Type enter will send your message to others!"
+const connected_to_ws = "Success to connected with chatting room!"
+const empty_message = "Can not send empty message!"
+const revice_message = "You got a new message!"
+const already_send = "Send your message successfully!"
+const server_close = "Server already closed!"
+const server_error = "Server has unknown error!"
+
+const showTips = (str) => {
+    $(".input_tips").val(str);
+}

@@ -1,0 +1,25 @@
+{
+  /**
+   * TypeScript Compiler Options
+   */
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    /**
+     * "declaration": true,
+     * "emitDeclarationOnly": true,
+     */
+    "moduleResolution": "node",
+    /** "isolatedModules": true, */
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["test/**/*.http", "debug/**/*"]
+}

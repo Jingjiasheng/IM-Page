@@ -1,0 +1,63 @@
+{
+  "presets": [
+    ["@babel/preset-typescript", { "allowDeclareFields": true }],
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "node": "current" },
+        "modules": "commonjs",
+        "ignoreBrowserslistConfig": true,
+        "shippedProposals": true
+      }
+    ]
+  ],
+
+  "ignore": ["**/__mocks__/**/*"],
+
+  "plugins": [["@babel/plugin-proposal-decorators", { "legacy": true }]],
+
+  "env": {
+    "lint": {
+      "presets": [
+        ["@babel/preset-typescript", { "allowDeclareFields": true }],
+        [
+          "@babel/preset-env",
+          {
+            "targets": { "node": "16" },
+            "modules": "commonjs",
+            "ignoreBrowserslistConfig": true,
+            "shippedProposals": true
+          }
+        ]
+      ]
+    },
+    "prod": {
+      "ignore": ["**/__mocks__/**/*"],
+      "plugins": [
+        ["@babel/plugin-transform-parameters"],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": false }]
+      ],
+      "presets": [
+        ["@babel/preset-typescript", { "allowDeclareFields": true }],
+        [
+          "@babel/preset-env",
+          {
+            "targets": { "node": "16" },
+            "modules": "commonjs",
+            "ignoreBrowserslistConfig": true,
+            "shippedProposals": true
+          }
+        ],
+        ["minify", {
+          "builtIns": false,
+          "mangle": false,
+          "deadcode": {
+            "keepFnArgs": true
+          }
+        }]
+      ],
+      "comments": false
+    }
+  }
+}

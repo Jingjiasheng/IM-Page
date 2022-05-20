@@ -1,0 +1,19 @@
+node_modules
+
+# Ignore logs
+logs
+*.log
+
+# Allow package.json files
+!package.json
+
+# Allow babel configuration files
+!babel.config.json
+
+# Allow typescript configuration files
+!tsconfig.json
+
+# Allow .npmrc configuration file to pull npm packages from private registry
+!.npmrc
+
+IM-Page.tar
