@@ -1,7 +1,7 @@
 const initWs = () => {
     Push.create('Welcome!');
-    ws = new WebSocket("wss://ws.automan.vip");
-    // ws = new WebSocket("ws://192.168.10.21:5151");
+    // ws = new WebSocket("wss://ws.automan.vip");
+    ws = new WebSocket("ws://192.168.10.21:5151");
 
     // readyState属性返回实例对象的当前状态，共有四种。
     // CONNECTING：值为0，表示正在连接。

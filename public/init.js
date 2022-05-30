@@ -29,8 +29,8 @@ import('https://openfpcdn.io/fingerprintjs/v3')
                 //请求的媒体类型
                 dataType: "json",
                 //请求地址
-                url : "https://im.automan.vip/getUser",
-                // url : "http://192.168.10.21:5050/getUser",
+                // url : "https://im.automan.vip/getUser",
+                url : "http://192.168.10.21:5050/getUser",
                 //数据，json字符串
                 data : JSON.stringify({ finger: finger }),
                 //请求成功
@@ -61,8 +61,8 @@ const setNickName = (name) => {
         dataType: "json",
         contentType: "application/json;charset=utf-8",
         //请求地址
-        url : "https://im.automan.vip/setNewUser",
-        // url : "http://192.168.10.21:5050/setNewUser",
+        // url : "https://im.automan.vip/setNewUser",
+        url : "http://192.168.10.21:5050/setNewUser",
         //数据，json字符串
         data: JSON.stringify({
             finger: localStorage.getItem("finger"),
